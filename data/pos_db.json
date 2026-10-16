@@ -1,0 +1,204 @@
+{
+  "items": [
+    {
+      "id": "item-1",
+      "name": "Espresso Roast (Whole Bean 1kg)",
+      "sku": "BEAN-001",
+      "category": "Packaged Goods",
+      "costPrice": 10,
+      "sellingPrice": 24,
+      "stock": 20,
+      "minStockAlert": 5,
+      "unit": "bag",
+      "description": "Signature medium-dark roast whole beans.",
+      "barcode": "890123456701",
+      "colorTag": "#6366f1",
+      "createdAt": "2026-10-01T08:00:00Z"
+    },
+    {
+      "id": "item-2",
+      "name": "Iced Vanilla Latte",
+      "sku": "BEV-001",
+      "category": "Coffee & Tea",
+      "costPrice": 1.2,
+      "sellingPrice": 5.5,
+      "stock": 45,
+      "minStockAlert": 10,
+      "unit": "cup",
+      "description": "Double espresso, cold milk, and Madagascar vanilla.",
+      "barcode": "890123456702",
+      "colorTag": "#f59e0b",
+      "createdAt": "2026-10-01T08:00:00Z"
+    },
+    {
+      "id": "item-3",
+      "name": "Fresh Butter Croissant",
+      "sku": "BAKE-001",
+      "category": "Bakery & Pastries",
+      "costPrice": 0.9,
+      "sellingPrice": 3.75,
+      "stock": 15,
+      "minStockAlert": 6,
+      "unit": "pcs",
+      "description": "Flaky, buttery traditional French pastry.",
+      "barcode": "890123456703",
+      "colorTag": "#d97706",
+      "createdAt": "2026-10-01T08:00:00Z"
+    },
+    {
+      "id": "item-4",
+      "name": "Avocado Sourdough Toast",
+      "sku": "MEAL-001",
+      "category": "Meals & Snacks",
+      "costPrice": 2.5,
+      "sellingPrice": 8.5,
+      "stock": 18,
+      "minStockAlert": 5,
+      "unit": "plate",
+      "description": "Toasted sourdough with ripe avocado, seeds, and sea salt.",
+      "barcode": "890123456704",
+      "colorTag": "#059669",
+      "createdAt": "2026-10-01T08:00:00Z"
+    },
+    {
+      "id": "item-5",
+      "name": "Cold Brew (16oz)",
+      "sku": "BEV-002",
+      "category": "Coffee & Tea",
+      "costPrice": 0.8,
+      "sellingPrice": 4.75,
+      "stock": 3,
+      "minStockAlert": 5,
+      "unit": "cup",
+      "description": "Slow-steeped smooth iced coffee.",
+      "barcode": "890123456705",
+      "colorTag": "#3b82f6",
+      "createdAt": "2026-10-01T08:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1001",
+      "orderNumber": "#ORD-1001",
+      "timestamp": "2026-10-16T14:55:37.967Z",
+      "customerName": "Sarah Jenkins",
+      "paymentMethod": "CREDIT_CARD",
+      "items": [
+        {
+          "itemId": "item-2",
+          "itemName": "Iced Vanilla Latte",
+          "category": "Coffee & Tea",
+          "unitCost": 1.2,
+          "unitPrice": 5.5,
+          "quantity": 2,
+          "discount": 0,
+          "lineTotal": 11,
+          "lineCOGS": 2.4,
+          "lineProfit": 8.6
+        },
+        {
+          "itemId": "item-3",
+          "itemName": "Fresh Butter Croissant",
+          "category": "Bakery & Pastries",
+          "unitCost": 0.9,
+          "unitPrice": 3.75,
+          "quantity": 1,
+          "discount": 0,
+          "lineTotal": 3.75,
+          "lineCOGS": 0.9,
+          "lineProfit": 2.85
+        }
+      ],
+      "subtotal": 14.75,
+      "discountTotal": 0,
+      "taxPercent": 8,
+      "taxAmount": 1.18,
+      "grandTotal": 15.93,
+      "totalCOGS": 3.3,
+      "grossProfit": 11.45,
+      "amountPaid": 15.93,
+      "changeDue": 0,
+      "status": "COMPLETED",
+      "cashierName": "Alex Morgan"
+    },
+    {
+      "id": "ord-1002",
+      "orderNumber": "#ORD-1002",
+      "timestamp": "2026-10-16T16:55:37.967Z",
+      "customerName": "Walk-in Customer",
+      "paymentMethod": "CASH",
+      "items": [
+        {
+          "itemId": "item-4",
+          "itemName": "Avocado Sourdough Toast",
+          "category": "Meals & Snacks",
+          "unitCost": 2.5,
+          "unitPrice": 8.5,
+          "quantity": 1,
+          "discount": 0,
+          "lineTotal": 8.5,
+          "lineCOGS": 2.5,
+          "lineProfit": 6
+        },
+        {
+          "itemId": "item-5",
+          "itemName": "Cold Brew (16oz)",
+          "category": "Coffee & Tea",
+          "unitCost": 0.8,
+          "unitPrice": 4.75,
+          "quantity": 1,
+          "discount": 0,
+          "lineTotal": 4.75,
+          "lineCOGS": 0.8,
+          "lineProfit": 3.95
+        }
+      ],
+      "subtotal": 13.25,
+      "discountTotal": 0,
+      "taxPercent": 8,
+      "taxAmount": 1.06,
+      "grandTotal": 14.31,
+      "totalCOGS": 3.3,
+      "grossProfit": 9.95,
+      "amountPaid": 20,
+      "changeDue": 5.69,
+      "status": "COMPLETED",
+      "cashierName": "Alex Morgan"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-1",
+      "timestamp": "2026-10-15T21:55:37.967Z",
+      "title": "Store Electricity & Utilities",
+      "category": "UTILITIES",
+      "amount": 85,
+      "notes": "Weekly commercial power for espresso machine and refrigeration"
+    }
+  ],
+  "stockAdjustments": [
+    {
+      "id": "stk-adj-1",
+      "timestamp": "2026-10-15T17:55:37.967Z",
+      "itemId": "item-3",
+      "itemName": "Fresh Butter Croissant",
+      "type": "EXPIRED",
+      "quantityChange": -2,
+      "unitCost": 0.9,
+      "financialImpact": 1.8,
+      "reasonNote": "Day-old unsold batch discarded after closing."
+    }
+  ],
+  "settings": {
+    "storeName": "The Corner Cafe & Bakery",
+    "storeTagline": "Artisan Coffee & Fresh Pastries",
+    "address": "101 Market St, Suite 4",
+    "phone": "+1 (555) 234-5678",
+    "currency": "$",
+    "taxRatePercent": 8,
+    "enableTax": true,
+    "receiptHeader": "Thank you for visiting The Corner Cafe!",
+    "receiptFooter": "WiFi: CornerCafeGuest | Pass: coffee123",
+    "cashierName": "Alex Morgan"
+  }
+}

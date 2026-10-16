@@ -1,0 +1,6 @@
+{
+  "name": "OmniPOS - Cashier & Inventory Stock Management",
+  "description": "Point-of-sale cashier system with real-time inventory tracking, simple catalog, receipt generation, and profit & loss ledger backed by persistent server storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
